@@ -1,0 +1,46 @@
+name: Building block
+description: A piece of work that brings the vision closer, for a repository that has no issue for it yet.
+body:
+  - type: markdown
+    attributes:
+      value: Title the issue as an imperative phrase. Once it exists, add it as a sub-issue of the vision issue, tiavelum/claude-roadmap#2. When its repository exists, transfer the issue there.
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What is true when this is done, and which point of the vision it serves.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What the work covers and what it leaves out.
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Repository
+      description: Where the work happens, or "none yet".
+    validations:
+      required: true
+  - type: textarea
+    id: blocked-by
+    attributes:
+      label: Blocked by
+      description: Issues that must be done first, if any.
+  - type: textarea
+    id: touch-points
+    attributes:
+      label: Touch points
+      description: Every step that needs tiavelum, known before work starts.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: The condition under which the issue can be closed.
+    validations:
+      required: true

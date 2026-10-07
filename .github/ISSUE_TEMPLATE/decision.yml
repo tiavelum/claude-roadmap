@@ -1,0 +1,38 @@
+name: Decision
+description: Ask tiavelum for one decision, with its options and a recommendation.
+labels: [decision, needs-tiavelum]
+body:
+  - type: markdown
+    attributes:
+      value: Title the issue as an imperative phrase starting with "Decide", such as "Decide where the digest lives". Phrase it so that a one-line answer settles it.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: The one question to decide, and what depends on the answer.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options
+      description: Every option known, each with its consequence.
+      placeholder: |
+        1. ... : consequence
+        2. ... : consequence
+    validations:
+      required: true
+  - type: input
+    id: recommendation
+    attributes:
+      label: Recommendation
+      description: The option to take.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Why that option, against the others.
+    validations:
+      required: true

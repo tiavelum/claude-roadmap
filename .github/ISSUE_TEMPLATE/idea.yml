@@ -1,0 +1,28 @@
+name: Idea
+description: Capture a raw idea for the roadmap, wherever it came up.
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: Title the issue as an imperative phrase that names what the idea would do.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: What would change, in a few sentences a reader who was not there can follow.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Which point of the vision issue it serves, or what problem it solves.
+    validations:
+      required: true
+  - type: input
+    id: origin
+    attributes:
+      label: Where it came up
+      description: The repository, issue or conversation, and the date.
+    validations:
+      required: true
